@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;600;700&display=swap');
+
+
+
+
+
+:root {
+  --1-color: #FCD8CD; /* A green color */
+ --2-color: #FEEBF6; /* A green color */
+  --3-color: #EBD6F8; /* A blue color */
+  --4-color: #687fe5; /* A gray color */
+}
+
+
+
+body {
+  background-color: #E9D6F8;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+/* NAVBAR */
+
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid var(--3-color);
+}
+
+
+/* GRID SECTION */
+.anime-grid {
+  padding: 10px 0px;
+}
+
+/* MAIN TITLES */
+.section-title-main {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+/* IMAGE BOXES */
+.anime-box {
+  background-color: #d4a1fd;
+  border: 3px solid #000;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.big-box {
+  height: 500px;
+}
+.big-img-anime,
+.small-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.small-box {
+  height: 230px;2
+}
+
+h1 {
+  border-left: 10px solid var(--4-color);
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.133);
+  padding-left: 10px;
+}
+
+/* DESCRIPTION BOX */
+/* .section-box {
+  background-color: white;
+  border-radius: 14px;
+  padding: 18px 22px;
+  border: 2px solid #000;
+  line-height: 1.6;
+}
+.section-box h1 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.section-box h5 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+.section-box p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.Text-box{
+  background-color: rgb(175, 131, 216);
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: 3px solid rgb(165, 79, 245);
+  box-shadow: #1e144a;
+} */
+
+.story-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.story-item {
+  flex: 0 0 auto;
+  width: 200px;
+  scroll-snap-align: start;
+  border-radius: 10px;
+  background: #f8f9fa;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.story-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.big-img-anime {
+  border-radius: 14px;
+  object-fit: cover;
+  width: 100%;
+  height: 480px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+.anime-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.anime-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.anime-card:hover .anime-img {
+  transform: scale(1.08);
+}
+
+.anime-info {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(56, 54, 54, 0.75);
+  color: white;
+  transition: bottom .4s ease;
+}
+
+.anime-card:hover .anime-info {
+  bottom: 0;
+}
+
+.anime-info h2 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+.video-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+  z-index: 10; /* ให้เหนือทุกอย่าง */
+}
+
+.video-controls button,
+.video-controls input[type="range"] {
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+
+.video-controls input[type="range"] {
+  width: 80px;
+}
+
+
+.text-3 {
+  color: var(--3-color);
+}
+
+
+.text-4 {
+  color: var(--4-color);
+}
+
+
+
+
+
+
